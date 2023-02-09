@@ -18,9 +18,9 @@ export default function Board() {
     }
     const nextSquares = squares.slice();
     if (xIsNext) {
-      nextSquares[i] = '✘';
-    } else {
       nextSquares[i] = '☯';
+    } else {
+      nextSquares[i] = '✘';
     }
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
